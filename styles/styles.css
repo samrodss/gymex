@@ -1,0 +1,401 @@
+:root {
+  /*DARK MODE*/
+  --darkmode-bg: #2b332f;
+  --font-color-darkmode: #cfe8dd;
+  --darkmode-accent: #00f58f;
+  --darkmode-btn-bg: #35a073;
+  --darkmode-secondary-bg: #cfe8dd;
+
+  /*LIGHT MODE*/
+
+  --lightmode-bg: #cfe8dd;
+  --lightmode-accent: #00f58f;
+  --lightmode-btn-bg: #2b332f;
+  --font-color-lightmode: #324b40;
+
+  /*FOOTER LINK*/
+  --footer-link: #3b755d;
+}
+
+/* GENERAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-emphasis: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+}
+
+html {
+  min-height: 100vh;
+  position: relative;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.8;
+  text-decoration: none;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+a {
+  text-emphasis: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#msg {
+  color: var(--darkmode-bg);
+  background-color: var(--darkmode-accent);
+  border: 1px solid var(--font-color-darkmode);
+  padding: 10px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* BUTTON*/
+
+button {
+  border: 0;
+  padding: 0.8rem 1rem;
+  font-weight: 900;
+  font-family: "Space Grotesk";
+}
+
+/* H1 */
+#title {
+  font-weight: 900;
+  font-family: "Bebas Neue";
+}
+
+/* HEADER */
+
+header {
+  width: 100vw;
+  height: 60px;
+  background-color: var(--lightmode-bg);
+  color: var(--font-color-lightmode);
+}
+
+#user-icon {
+  color: var(--darkmode-bg);
+}
+
+#navbar {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+ul .nav-items-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-items-container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.nav-items {
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem;
+  color: var(--font-color-lightmode);
+  font-family: "Space Grotesk";
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav-items:hover {
+  color: var(--font-color-lightmode);
+  background-color: var(--lightmode-accent);
+  transition-duration: 0.8s;
+}
+
+#logo {
+  width: 70px;
+  cursor: pointer;
+}
+
+#avatar-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  color: var(--font-color-darkmode);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+#footer-text {
+  padding: 10px;
+}
+
+#footer-link {
+  color: var(--darkmode-accent);
+}
+
+/*DARK MODE*/
+
+.dark-mode {
+  background-color: var(--darkmode-bg);
+  color: var(--font-color-darkmode);
+}
+
+.dark-mode-link {
+  color: var(--darkmode-accent);
+}
+
+/* DARK MODE BUTTONS */
+
+.btn-dark {
+  cursor: pointer;
+  background-color: var(--darkmode-accent);
+}
+.btn-dark:hover {
+  cursor: pointer;
+  background-color: var(--lightmode-bg);
+  transition-duration: 0.8s;
+}
+
+.btn-dark-secondary {
+  cursor: pointer;
+  background-color: var(--darkmode-secondary-bg);
+}
+
+.btn-dark-secondary:hover {
+  background-color: var(--lightmode-accent);
+  transition-duration: 0.8s;
+}
+
+/* HOMEPAGE */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/*CREATE PAGE*/
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.create-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Roboto";
+}
+
+.create-form h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--font-color-darkmode);
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button[type="submit"] {
+  display: block;
+  margin-left: auto;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--font-color-lightmode);
+  background-color: var(--darkmode-accent);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--darkmode-btn-bg);
+  color: var(--font-color-darkmode);
+  transition-duration: 0.8s;
+}
+/*EMPTY LOG PAGE*/
+
+#empty-log {
+  font-size: 72px;
+  font-family: "Bebas Neue";
+}
+#empty-log a {
+  color: var(--darkmode-accent);
+}
+#empty-log span {
+  color: var(--darkmode-btn-bg);
+}
+
+#empty-log a:hover {
+  color: var(--darkmode-btn-bg);
+  transition-duration: 0.8s;
+}
+
+#empty-log-subtitle {
+  padding-bottom: 1rem;
+}
+
+/*HOMEPAGE*/
+
+.homepage-container {
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+table th[scope="col"],
+th[scope="row"],
+table td[scope="row"] {
+  color: var(--font-color-darkmode);
+}
+
+/*ACTION ICONS FOR THE EXERCISES ADDED */
+
+.action-btn {
+  color: var(--darkmode-accent);
+}
+
+.action-btn:hover {
+  color: var(--darkmode-btn-bg);
+  transition-duration: 0.8s;
+}
+
+/*ADD EXERCISE BTN*/
+.fa-square-plus {
+  font-size: 40px;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+button[type="submit" i] {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--darkmode-accent);
+}
+
+button[type="submit" i]:hover {
+  background-color: transparent;
+}
+
+.delete-icon:hover {
+  background: none;
+  color: var(--darkmode-btn-bg);
+  transition-duration: 0.8s;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 400px) {
+  .table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
